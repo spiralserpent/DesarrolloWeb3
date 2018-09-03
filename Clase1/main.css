@@ -1,0 +1,126 @@
+body {
+    font-size: 64px;
+    background-color: black;
+}
+.container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 80px 80px 80px 80px;
+  grid-template-rows: 80px 80px;
+  grid-template-areas: 
+  "header header header header" 
+  "main main main main" 
+  "main main main main" 
+  "main main main main" 
+  "main main main main" 
+  "main main main main";
+}
+.item-header {
+  grid-area: header;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  background-color: black;
+  color: white;
+  text-align: right;
+}
+.btn {
+  background-color: dimgray;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin: 4px 2px;
+  border-radius: 50%;
+}
+.silver {
+  background-color: silver;
+  color: black;
+}
+.orange {
+  background-color: orange;
+}
+button {
+  font-size: 26px;
+}
+.reset {
+    background: rgba(201,120,116,.28);
+    color:#c97874;
+    font-weight: 400;
+    margin-left: -77px;
+    padding: 0.5em 1em;
+    position: absolute;
+      top: -20em;
+      left: 50%;
+    width: auto;
+    height: auto;
+    
+    &:hover {
+      background: #c97874;
+      color: #100a1c;    
+    }
+    .ops:focus::after {
+        content: attr(data-ops);
+        margin-left: -210px;
+        width: 420px;
+      }
+      
+      /* Same as above, modified for result */
+      .equals:focus::after {
+        content: attr(data-result);
+        margin-left: -300px;
+        width: 600px;
+      }.button {
+  background-image: url(http://www.photos-public-domain.com/wp-content/uploads/2012/11/black-bumpy-plastic-texture.jpg);
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 2px 5px black;
+  color: white;
+  font-family: Roboto Sans, sans-serif;
+  font-size: 1.8em;
+  height: 8%;
+  margin: 3%;
+  padding: 3%;
+  text-align: center;
+  width: 12%;
+}
+#plus {
+  height: 27%;
+  font-size: 3em;
+}
+#calculator { /* outer calculator wrapper */
+  background-image: url(http://img07.deviantart.net/fdab/i/2012/258/3/2/metal_texture_19_by_wojtar_stock-d5er4uf.jpg);
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 10px 10px 5px #888888;
+  height: 520px;
+  margin: 0 auto;
+  width: 400px;
+}
+#display { /* bar displaying calcuator output */
+  background-color: gray;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: black;
+  font-family: Roboto Sans, sans-serif;
+  font-size: 2.5em;
+  height: 40px;
+  margin: 40px auto 0;
+  padding: 10px;
+  text-align: right;
+  width: 250px;
+}
+#controls { /* box containing calculator keys */
+  align-content: space-around;
+  display: -ms-flex;
+  display: -webkit-flex;  
+  display: flex;
+  flex-wrap: wrap;
+  height: 70%;
+  justify-content: center;
+  margin: 8% auto 0;
+  width: 80%;
+}
+#zero, #dot, #equals { /* last line of keys */
+  margin-top: -19%;
+  margin-right: 27%;
+}
